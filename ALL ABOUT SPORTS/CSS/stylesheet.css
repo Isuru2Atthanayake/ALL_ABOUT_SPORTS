@@ -1,0 +1,222 @@
+
+/* Common background theme and fonts */  
+body{background-color:black;
+	     font-family: Century Gothic, sans-serif;
+		 color:white;
+		 margin:0;
+		 padding:0;
+		 }
+		 
+h1{ font-family:'Trebuchet MS', sans-serif;
+     text-transform:uppercase;
+	}
+	
+	
+
+/* creating  a fixed navbar with visual transparency*/
+.navbar{position:fixed;
+	             float:right;
+	            list-style:none;				
+				width:100%;
+				background-color: rgba(0, 0, 0, 0.8);
+				padding-bottom:0;
+				padding-top:0;
+				transition:0.3s;
+				
+				}
+	/*buttons in the navbar and hover and click effects */			
+	.navbar li{
+		           
+	                display:inline-block;
+					padding:10px;
+					
+					}
+	.navbar_row li a{
+	                    color:white;
+						text-decoration:none;
+						padding:20px 20px;
+						font-family: 'Trebuchet MS', sans-serif;
+						
+						font-size:20px;
+						position:relative;
+	
+	}
+	
+	
+	
+    .navbar_row li a:active{
+	
+	    color:black;
+		background-color:white;
+		border:2px solid black;
+		
+	}
+	.navbar_row li a:hover{
+	
+	   border:2px solid white;
+	   border-radius:20px;
+	   
+	}
+	
+	
+	/* mainpage first section */
+	.mainpage_firstsplitpane{
+		              background-image:url("../Photos/bi8.jpg");
+		              background-size:cover;
+					  height:800px;
+					  width:100%;
+					  
+		
+	}
+	
+/* background styling for main page description*/	
+.mainpage_opener1 {text-align:center;
+                        margin-top:400px;
+		        position:absolute;
+		        width:100%;
+			background-color:rgba(0,0,0,0.4);
+						
+}						
+	/* page footer color and positions*/
+	.pagefooter {
+     text-decoration:none;
+	 background-color: rgba(0, 0, 0, 0.1);
+	 padding:20px;
+	 width:100%;
+	 height:80px;
+	 margin:auto;
+	 bottom:0;
+    color:white;
+	font-family: 'Trebuchet MS', sans-serif;
+    	
+}
+	 .pagefooter a{text-decoration:none;
+               font-size:20px;
+			   color:white;
+			   
+			    }
+	.pagefooter a{
+	padding:10px 20px;
+	
+	
+      }
+			
+/* positioning for the arrow icon in footer that redirects to the top*/
+
+			   
+#link {text-align:right;
+	   float:right;}	
+/* ***********************************QUERR PAGE************************************************* */
+/*background image of the description of query */
+.query_panel1 {height:500px;width:100%;
+                     background-size:cover;
+						background-image:url("../Photos/si4.jpg")}						 
+/*description abot query*/	
+.query_header_message {text-align:center;
+                        margin-top:300px;
+			position:absolute;
+			width:100%;
+		       background-color:rgba(0,0,0,0.4);
+		       height:185px;
+						
+						
+                       
+}
+/*anchor that directs to form and its effects*/
+.query_header_message a{text-decoration:none;
+                         color:white;
+                        padding:5px;
+			border:2px solid white;
+                              border-radius:25px;}
+						 
+						 
+.query_header_message a:hover{border:2px solid black;
+                              border-radius:25px;
+			      color:black;
+	                             
+}
+
+
+/*contains forms and the image */
+.query_container {
+	               width:100%;
+	               height:510px;	               
+	               display:flex;	                	
+				   border:2px solid white;
+                           }
+						   
+/*contains the form section of the container*/
+.query_formsection{ font-weight:bold;					   
+						   width:50%;
+						   height:510px;
+						   background-color:white;}
+						   
+/*positioning the inputs in the query form*/
+.query_formelements{padding:20px;}
+
+/*radio buttons in the form*/
+.query_radio1 {
+	           padding:5px;
+			   margin-left:50px;
+}
+.query_radio2 {
+	           padding:5px;
+			   margin-left:34px;
+}
+.query_radio3 {
+	           padding:5px;
+			   margin-left:23px;
+}
+						   						   
+
+
+
+/*preview section after clicking view query*/	
+.query_EndResultDisplay{padding:20px;
+ text-align:center;
+ font-size:20px;
+ }
+
+/*includes the form and form preview after clicking view query button */	
+.query_mainformelements {color:black;
+                         padding:20px;
+						 
+						 }
+
+ 
+ /*positioning edit and submit buttons*/
+ .query_ERbtns{
+        border-top:200px;}
+		
+/*confirmation message after submitting email*/		
+ .query_confirmation_message{text-align:center;
+                                color:black;
+ }						   
+
+/*button to redirect to query after submitting email and its effects*/
+.backtoqf a{border-radius:25px;
+            border:2px solid black;
+			text-decoration:none;
+            padding:5px;
+             color:black;			
+	
+	
+}
+
+.backtoqf a:hover{border-radius:25px;
+            border:2px white;            
+             color:white;	
+			 background-color:black;	
+}
+	
+
+/* image in the query_container */
+.query_followupimage{top:0px;
+	padding-top:0px;
+	width:50%;
+	height:510px;
+	background-image:url("../Photos/si1.jpg");
+	background-size:cover;
+	float:left;
+	
+}	

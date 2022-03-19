@@ -1,0 +1,442 @@
+ 
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Quiz.css">
+	<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+</head>
+
+<body>
+	<!-- Includes the navigation bar with the logo -->
+	<div class="navbar">
+	<!--The logo is placed along with styling  -->
+	<img src="Photos/logo.png" class="logo" alt="logo" width="80" height="80" style="float:right;">
+		<div class="navbar_row">
+			<ul>
+	            <!-- links to other pages  -->
+				<li><a href="MainPage.html"> Home</a></li>
+				<li><a href="Query.html">Queries </a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
+				<li><a href="Quiz.html">Quiz</a></li>
+				<li><a href="BuyProducts.html">Shop</a></li>
+				<li><a href="images.html">Images</a></li>
+				<li><a href="AboutUs.html">About Us</a></li>
+			</ul>
+		</div>
+	</div>
+ <div class="quiz_questions">
+ <img src="Photos/Background.jpg" style="width:100%" >
+	<!--logo and tooltip-->
+	<!--timer display-->
+		<div id= "time" name="time" >
+		 <p id="timer"> </p>
+		</div>
+	<br>
+	
+	<h1 id="C4"> Do you think you got what it takes!!!!</h1>
+	<hr>
+	<form id= "quiz" name="quiz" >
+	<div id = "box">
+	<!--questions and  answers-->
+	<p> Q1. In professional basketball, how high is the basketball hoop from the ground?</p>
+	<form>
+	<input type="radio" name="q1" value="10 feet"> <a>10 feet</a><br>
+	<input type="radio" name="q1" value="15 feet"> <a>15 feet</a><br> 
+	<input type="radio" name="q1" value="9  feet"> <a>9  feet</a><br>
+	<input type="radio" name="q1" value="11 feet"> <a>11 feet</a><br>	
+	</form>
+	<div id="answer1" style="height: 30px; width: 500px;"> </div>
+  
+	<p>Q2. The Olympics are held every how many years?</p>
+	<form>
+	<input type="radio" name="q2" value="4"> <a>4</a><br>
+	<input type="radio" name="q2" value="6"> <a>6</a><br>
+	<input type="radio" name="q2" value="3"> <a>3 </a><br>
+	<input type="radio" name="q2" value="2"> <a>2</a><br>
+	</form>
+	<div id="answer2" style="height: 30px; width: 500px;"> </div>
+	
+	<p>Q3.  What is Canada’s national sport?</p>
+	<form>
+	<input type="radio" name="q3" value="Football"> <a>Football</a><br>
+	<input type="radio" name="q3" value="Golf"> <a>Golf</a><br>
+	<input type="radio" name="q3" value="Lacrosse"> <a>Lacrosse</a><br>
+	<input type="radio" name="q3" value="Tennis"> <a>Tennis</a><br>
+	</form>
+	<div id="answer3" style="height: 30px; width: 500px;"> </div>
+	
+	<p>Q4. .What is the only country to have played in every single soccer World Cup? </p>
+	<form>
+	<input type="radio" name="q4" value="Argentina"> <a>Argentina</a><br>
+	<input type="radio" name="q4" value="Brazil"> <a>Brazil </a><br>
+	<input type="radio" name="q4" value="Portugal"> <a>Portugal</a><br>
+	<input type="radio" name="q4" value="Germany"> <a>Germany </a><br>
+	</form>
+	<div id="answer4" style="height: 30px; width: 500px;"> </div>
+	
+	<p>Q5.  How many Olympic games were held in countries that no longer exist?</p>
+	<form>
+	<input type="radio" name="q5" value="3"> <a>3</a><br>
+	<input type="radio" name="q5" value="6"> <a>6</a><br>
+	<input type="radio" name="q5" value="1"> <a>1</a><br>
+	<input type="radio" name="q5" value="2"> <a>2</a><br>
+	</form>
+	<div id="answer5" style="height: 30px; width: 500px;"> </div>
+	
+	<p>Q6.  This basketball move was banned from the years 1967 to 1976. What was it?</p>
+	<form>
+	<input type="radio" name="q6" value="Slam Dunk"> <a>Slam Dunk</a><br>
+	<input type="radio" name="q6" value="Layup"> <a>Layup</a><br>
+	<input type="radio" name="q6" value="Crossover"> <a>Crossover</a><br>
+	<input type="radio" name="q6" value="Spin move"> <a>Spin move</a><br>
+	</form>
+	<div id="answer6" style="height: 30px; width: 500px;"> </div>
+	
+	<p>Q7. This country is known for producing the most Formula One World Championship winning racers. What country is it?</p>
+	<form>
+	<input type="radio" name="q7" value="USA"> <a>USA</a><br>
+	<input type="radio" name="q7" value="UK"> <a>UK</a><br>
+	<input type="radio" name="q7" value="Germany"> <a>Germany</a><br>
+	<input type="radio" name="q7" value="Italy"> <a>Italy</a><br>
+	</form>
+	<div id="answer7" style="height: 30px; width: 500px;"> </div>
+	
+	<p>Q8. What was the first country from Africa to qualify for a soccer World Cup?</p>
+	<form>
+	<input type="radio" name="q8" value="Egypt"> <a>Egypt</a><br>
+	<input type="radio" name="q8" value="Nigeria"> <a>Nigeria</a><br>
+	<input type="radio" name="q8" value="Senegal"> <a>Senegal</a><br>
+	<input type="radio" name="q8" value="Algeria"> <a>Algeria</a><br>
+	</form>
+	<div id="answer8" style="height: 30px; width: 500px;"> </div>
+	
+	<p>Q9. How many players are on a baseball team?</p>
+	<form>
+	<input type="radio" name="q9" value="11"> <a>11</a><br>
+	<input type="radio" name="q9" value="10"> <a>10</a><br>
+	<input type="radio" name="q9" value="12"> <a>12</a><br>
+	<input type="radio" name="q9" value="9"> <a>9</a><br>
+	</form>
+	<div id="answer9" style="height: 30px; width: 500px;"> </div>
+	
+	<p>Q10. Who was the youngest player to reach 10,000 points in the regular season in 20th century NBA?</p>
+	<form>
+	<input type="radio" name="q10" value="Lebron James"> <a>Lebron James</a><br>
+	<input type="radio" name="q10" value="Stephen Curry"> <a>Stephen Curry</a><br>
+	<input type="radio" name="q10" value="Kobe Bryant"> <a>Kobe Bryant</a><br>
+	<input type="radio" name="q10" value="Michael Jordan"> <a>Michael Jordan</a><br>
+	</form>
+	<div id="answer10" style="height: 30px; width: 500px;"> </div>
+	<hr>
+	
+	<input id= "button2" type="button" value="I'm Done" onclick="check();" <br> 
+	<a href="Quiz.html"> <input id= "button2" type="button" value="Retake" ;></a>
+	
+	<hr>
+
+		<div id="after_submit">
+		<p id="number_correct"> </p>
+		<p id="message"> </p>
+		
+	</div>
+	</form>
+ </div>	
+		<script>
+		<!--Timer calculation-->
+					var timer;
+					var min = 1;
+					var sec = 60;
+					var min2; 
+					var sec2;
+					
+					window.onload = function timecount(){
+						timer = setInterval(function(){ 
+							sec--;
+							if (min == 0 && sec == 0){
+								clearTimeout(timer);
+								document.getElementById("box").innerHTML = "Times up"
+								}
+							else if(sec == 00){
+								min--;
+								sec = 60;
+							}
+							 document.getElementById("timer").innerHTML =   "COUNTDOWN " + min + " : " + sec  ;  
+							},1000); 
+						 }
+										
+			<!--Answer validation-->
+			function check(){
+			clearTimeout(timer);
+				var ans1Arr = document.getElementsByName("q1");
+				var ans1Arr = document.getElementsByName("q1");
+				var ans2Arr = document.getElementsByName("q2");
+				var ans3Arr = document.getElementsByName("q3");
+				var ans4Arr = document.getElementsByName("q4");
+				var ans5Arr = document.getElementsByName("q5");
+				var ans6Arr = document.getElementsByName("q6");
+				var ans7Arr = document.getElementsByName("q7");
+				var ans8Arr = document.getElementsByName("q8");
+				var ans9Arr = document.getElementsByName("q9");
+				var ans10Arr = document.getElementsByName("q10");	
+				var correct = 0;
+
+				
+				var ans1Select = " "; var ans2Select = " "; var ans3Select = " "; var ans4Select = " "; var ans5Select = " ";
+				var ans6Select = " "; var ans7Select = " "; var ans8Select = " "; var ans9Select = " "; var ans10Select = " ";
+						
+						
+					//Question1
+						for (var i=0; i< ans1Arr.length;i++){
+							if (ans1Arr[i].checked){
+								ans1Select = ans1Arr[i].value;
+								break;
+							}
+						}
+						if (ans1Select == " ") {
+							document.getElementById("answer1").innerHTML = "You did not select an answer" ;
+							document.getElementById("answer1").style.color = "red";
+						}
+						else if(ans1Select == "10 feet") {
+							document.getElementById("answer1").innerHTML = "Correct answer!!!" ;
+							correct +=1;
+							document.getElementById("answer1").style.color = "green";
+						}
+						else {
+							document.getElementById("answer1").innerHTML = "Wrong!!! Correct Answer is 10 feet." ;
+							correct--;
+							document.getElementById("answer1").style.color = "red";
+						}
+						
+						//Question2
+						for (var i=0; i< ans2Arr.length;i++){
+							if (ans2Arr[i].checked){
+								ans2Select = ans2Arr[i].value;
+								break;
+							}
+						}
+						
+						if (ans2Select == " ") {
+							document.getElementById("answer2").innerHTML = "You did not select an answer" ;
+							document.getElementById("answer2").style.color = "red";
+						}
+						else if(ans2Select == "4") {
+							document.getElementById("answer2").innerHTML = "Correct answer!!!" ;
+							correct +=1;
+							document.getElementById("answer2").style.color = "green";
+						}
+						else {
+							document.getElementById("answer2").innerHTML = "Wrong!!! Correct Answer is 4." ;
+							correct--;
+							document.getElementById("answer2").style.color = "red";
+						}
+						
+						//Question3
+						for (var i=0; i< ans3Arr.length;i++){
+							if (ans3Arr[i].checked){
+								ans3Select = ans3Arr[i].value;
+								break;
+							}
+						}
+						
+						if (ans3Select == " ") {
+							document.getElementById("answer3").innerHTML = "You did not select an answer" ;
+							document.getElementById("answer3").style.color = "red";
+						}
+						else if(ans3Select == "Lacrosse") {
+							document.getElementById("answer3").innerHTML = "Correct answer!!!" ;
+							correct +=1;
+							document.getElementById("answer3").style.color = "green";
+						}
+						else {
+							document.getElementById("answer3").innerHTML = "Wrong!!! Correct Answer is Lacrosse." ;
+							correct--;
+							document.getElementById("answer3").style.color = "red";
+						}
+						
+						//Question4
+						for (var i=0; i< ans4Arr.length;i++){
+							if (ans4Arr[i].checked){
+								ans4Select = ans4Arr[i].value;
+								break;
+							}
+						}
+						
+						if (ans4Select == " ") {
+							document.getElementById("answer4").innerHTML = "You did not select an answer" ;
+							document.getElementById("answer4").style.color = "red";
+						}
+						else if(ans4Select == "Brazil") {
+							document.getElementById("answer4").innerHTML = "Correct answer!!!" ;
+							correct +=1;
+							document.getElementById("answer4").style.color = "green";
+						}
+						else {
+							document.getElementById("answer4").innerHTML = "Wrong!!! Correct Answer is Brazil." ;
+							correct--;
+							document.getElementById("answer4").style.color = "red";
+						}
+						
+						//Question5
+						for (var i=0; i< ans5Arr.length;i++){
+							if (ans5Arr[i].checked){
+								ans5Select = ans5Arr[i].value;
+								break;
+							}
+						}
+						
+						if (ans5Select == " ") {
+							document.getElementById("answer5").innerHTML = "You did not select an answer" ;
+							document.getElementById("answer5").style.color = "red";
+						}
+						else if(ans5Select == "3") {
+							document.getElementById("answer5").innerHTML = "Correct answer!!!" ;
+							correct +=1;
+							document.getElementById("answer5").style.color = "green";
+						}
+						else {
+							document.getElementById("answer5").innerHTML = "Wrong!!! Correct Answer is 3." ;
+							correct--;
+							document.getElementById("answer5").style.color = "red";
+						}
+						
+						//Question6
+						for (var i=0; i< ans6Arr.length;i++){
+							if (ans6Arr[i].checked){
+								ans6Select = ans6Arr[i].value;
+								break;
+							}
+						}
+						
+						if (ans6Select == " ") {
+							document.getElementById("answer6").innerHTML = "You did not select an answer" ;
+							document.getElementById("answer6").style.color = "red";
+						}
+						else if(ans6Select == "Slam Dunk") {
+							document.getElementById("answer6").innerHTML = "Your Answer is Correct!!!" ;
+							correct +=1;
+							document.getElementById("answer6").style.color = "green";
+						}
+						else {
+							document.getElementById("answer6").innerHTML = "Wrong!!! Correct Answer is Slam Dunk. " ;
+							correct--;
+							document.getElementById("answer6").style.color = "red";
+						}
+						
+						//Question7
+						for (var i=0; i< ans7Arr.length;i++){
+							if (ans7Arr[i].checked){
+								ans7Select = ans7Arr[i].value;
+								break;
+							}
+						}
+						
+						if (ans7Select == " ") {
+							document.getElementById("answer7").innerHTML = "You did not select an answer" ;
+							document.getElementById("answer7").style.color = "red";
+						}
+						else if(ans7Select == "UK") {
+							document.getElementById("answer7").innerHTML = "Correct answer!!!" ;
+							correct +=1;
+							document.getElementById("answer7").style.color = "green";
+						}
+						else {
+							document.getElementById("answer7").innerHTML = "Wrong!!! Correct Answer is UK." ;
+							correct--;
+							document.getElementById("answer7").style.color = "red";
+						}
+						
+						//Question8
+						for (var i=0; i< ans8Arr.length;i++){
+							if (ans8Arr[i].checked){
+								ans8Select = ans8Arr[i].value;
+								break;
+							}
+						}
+						
+						if (ans8Select == " ") {					
+							document.getElementById("answer8").innerHTML = "You did not select an answer" ;
+							document.getElementById("answer8").style.color = "red";
+						}
+						else if(ans8Select == "Egypt") {					
+							document.getElementById("answer8").innerHTML = "Correct answer!!!" ;
+							correct +=1;
+							document.getElementById("answer8").style.color = "green";
+						}
+						else {					
+							document.getElementById("answer8").innerHTML = "Wrong!!! Correct Answer is Egypt." ;
+							correct--;
+							document.getElementById("answer8").style.color = "red";
+						}
+						
+						//Question9
+						for (var i=0; i< ans9Arr.length;i++){
+							if (ans9Arr[i].checked){
+								ans9Select = ans9Arr[i].value;
+								break;
+							}
+						}
+						
+						if (ans9Select == " ") {					
+							document.getElementById("answer9").innerHTML = "You did not select an answer" ;
+							document.getElementById("answer9").style.color = "red";
+						}
+						else if(ans9Select == "9") {					
+							document.getElementById("answer9").innerHTML = "Correct answer!!!" ;
+							correct +=1;
+							document.getElementById("answer9").style.color = "green";
+						}
+						else {					
+							document.getElementById("answer9").innerHTML = "Wrong!!! Correct Answer is 9." ;
+							correct--;
+							document.getElementById("answer9").style.color = "red";
+						}
+						
+						//Question10
+						for (var i=0; i< ans10Arr.length;i++){
+							if (ans10Arr[i].checked){
+								ans10Select = ans10Arr[i].value;
+								break;
+							}
+						}
+						
+						if (ans10Select == " ") {					
+							document.getElementById("answer10").innerHTML = "You did not select an answer" ;
+							document.getElementById("answer10").style.color = "red";
+						}
+						else if(ans10Select == "Kobe Bryant") {					
+							document.getElementById("answer10").innerHTML = "Correct answer!!!" ;
+							correct +=1;
+							document.getElementById("answer10").style.color = "green";
+						}
+						else {					
+							document.getElementById("answer10").innerHTML = "Incorrect Answer!!! Correct Answer is Kobe Bryant" ;
+							correct--;
+							document.getElementById("answer10").style.color = "red";
+						}
+						
+			if (correct<0){
+			correct=0;
+			}							
+			
+			//the message according to the marks obtained
+			
+			var messages = ["You are phenomenal!!!","Nice Job!!!", "Good job!!!", "But don't worry...Practice makes perfect!!!"];
+			
+			min2 = 1 - min;
+			sec2 = 60 - sec;
+				   
+			document.getElementById("after_submit").style.visibility = "visible";
+			document.getElementById("number_correct").innerHTML = "You scored " + correct + "/10."+  " It took you " + min2 + " Minutes and " + sec2 + " Seconds to complete."; 
+			document.getElementById("message").innerHTML = messages[score];
+
+			}	
+		</script>
+
+		<a id="link" href="#top"><img src="Photos/arrow.png" alt="arrow" width="100" height="100"></a>
+		<a href=""><img src="Photos/developer.png" width="75" height="75"></a>
+		<p>Page Developer</p>
+	</body>
+</html>

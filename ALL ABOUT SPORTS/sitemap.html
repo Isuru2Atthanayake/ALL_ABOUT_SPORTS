@@ -1,0 +1,322 @@
+<!doctype html>
+	<html>
+		<head>
+			<title class="site">Sitemap</title>
+			
+			<style>
+
+		/* nav bar */
+		.navbar{position:fixed;
+		               float:right;
+		              list-style:none;
+		                        
+		        width:100%;
+		        background-color: rgba(0, 0, 0, 0.1);
+		        padding-bottom:0;
+		        padding-top:0;
+		        transition:0.3s;
+		        
+		        }
+		  .navbar li{
+		               
+		                  display:inline-block;
+		          padding:10px;
+		          
+		          }
+		  .navbar_row li a{
+		                      color:white;
+		            text-decoration:none;
+		            padding:20px 20px;
+		            font-family: 'Trebuchet MS', sans-serif;
+		            
+		            font-size:20px;
+		            position:relative;
+		  
+		  }
+		 .navbar_row li a.active{
+		  		color:black;
+		    	background-color:white;
+		    
+		  }
+		  .navbar_row li a:hover{
+		  
+		     border:2px solid white;
+		     border-radius:20px;
+		     
+		  }
+		  .logo{width:50; height:50;}
+		/* end of nav bar */
+
+		/* footer */
+			.pagefooter {
+			     text-decoration:none;
+				 background-color: rgba(0, 0, 0, 0.1);
+				 padding:20px;
+				 width:100%;
+				 height:80px;
+				 margin:auto;
+				 bottom:0;
+			    color:white;
+				font-family: 'Trebuchet MS', sans-serif;
+			    	
+			}
+			.pagefooter a{text-decoration:none;
+			               font-size:20px;
+						   color:white;
+						   
+						    }
+						   
+			#link {text-align:right;
+				   float:right;}	
+
+			.pagefooter a{
+				padding:10px 20px;
+				
+				
+			}
+			.pagefooter a:hover{
+				
+				
+				
+			}	   
+				
+
+		/* end of footer */
+
+		/* svg  styles start  */	
+			.word{ 
+				text-align: center;
+				font-family: "Brush Script MT", cursive;
+				margin-top: 5px;
+				font-size:90px;
+				color: #1E90FF;
+			}
+			
+			
+			#svgJS g:hover polyline,
+			#svgJS g:hover line {
+				fill: none;
+				stroke-width: 3;
+				stroke: #1E90FF;
+			}
+
+			#svgJS g:hover g text,
+			#svgJS g:hover text {
+				font-weight: bold;
+			}
+
+			#svgJS g:hover polygon,
+			#svgJS g:hover rect,
+			#svgJS g:focus polygon,
+			#svgJS g:focus rect {
+				fill:hsla(175, 0%, 44%, 0.3);
+			
+				stroke: #1E90FF;/*doge blue outline colour*/
+				stroke-width: 2;
+			}
+	   /* svg  styles end  */	
+			body{
+				background-color:black;
+			}
+
+
+			</style>
+		</head>
+		<body>   <!-- starting of navigation bar-->
+				<div class="mainpage_header">
+					<div class="navbar">
+						<img src="pics/logo.png" class="logo"; width="80" height="80" style="float:right;">
+						<div class="navbar_row">
+							<ul>
+							<li><a href="https://w1810008.users.ecs.westminster.ac.uk/MainPage.html"> Home</a></li>
+							<li><a href="https://w1810008.users.ecs.westminster.ac.uk/Query.html">Queries </a></li>
+							<li><a href="https://w1810007.users.ecs.westminster.ac.uk/sitemap.html">Sitemap</a></li>
+							<li><a href="https://w1810213.users.ecs.westminster.ac.uk/Quiz.html">Quiz</a></li>
+							<li><a href="https://w1810580.users.ecs.westminster.ac.uk/BuyProducts.html">Shop</a></li>
+							<li><a href="https://w1810007.users.ecs.westminster.ac.uk/images.html">Images</a></li>
+							<li><a href="https://w1810213.users.ecs.westminster.ac.uk/AboutUs.html">About Us</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+					<!-- end of navigation bar-->
+				    <h1 class="word">Sitemap</h1>
+				    <!--start of svg-->
+			   				<svg id="svgJS" height="700" width="2500">
+
+						/*---Home Page*/
+								<g id="groupId1">					 /*-curve      */
+									<rect x="720" y="80" height="60" rx="10" ry="10" width="150" stroke="purple" fill="none" stroke-width="2" />
+									<text fill="white" font-size="20" x="790" y="115" font-family="Arial" text-anchor="middle">Home Page</text>
+								</g>
+
+
+						/*this is a line  of (A) */		
+								<g id="groupId2" >
+										<line id="shapeId2" stroke="white" stroke-width="2" x1="790" y1="180" x2="790" y2="140"></line>
+									
+								</g>	
+								
+						/*---Shop Page*/
+						
+								<g id="groupId7" >
+									<rect x="300" y="230" rx="20" ry="20" height="50" width="150" stroke="purple" fill="none" stroke-width="2" />
+								<text fill="white" font-size="20" x="380" y="260" font-family="Arial" text-anchor="middle">Shop</text></g>
+								</g>
+
+
+						/*this is a line (B2)*/ 			
+								<g id="groupId2" >
+									<line id="shapeId2" stroke="purple" stroke-width="2" x1="370" y1="180" x2="370" y2="230"></line>
+									
+								</g>
+
+
+						/*---Aboutus Page*/
+						
+								<g id="groupId8" >
+									<rect x="600" y="230" rx="20" ry="20" height="50" width="150" stroke="purple" fill="none" stroke-width="2" />
+									<text fill="white" font-size="20" x="680" y="260" font-family="Arial" text-anchor="middle">Aboutus </text></g>
+								</g>
+
+
+						/*this is a line (B3)*/ 			
+								<g id="groupId2" >
+									<line id="shapeId2" stroke="purple" stroke-width="2" x1="670" y1="180" x2="670" y2="230"></line>
+									
+								</g>
+
+
+
+
+						/*---Quiz  Page*/
+						
+								<g id="groupId9" >
+									<rect x="900" y="230" rx="20" ry="20" height="50" width="150" stroke="purple" fill="none" stroke-width="2" />
+									<text fill="white" font-size="20" x="980" y="260" font-family="Arial" text-anchor="middle">Quiz</text></g>
+								</g>
+
+
+						/*this is a line (B4)*/ 			
+								<g id="groupId2" >
+									<line id="shapeId2" stroke="purple" stroke-width="2" x1="970" y1="180" x2="970" y2="230"></line>
+								
+								</g>
+
+
+
+
+						/*---Images  Page*/
+						
+								<g id="groupId10" >
+									<rect x="1150" y="230" rx="20" ry="20" height="50" width="150" stroke="purple" fill="none" stroke-width="2" />
+									<text fill="white" font-size="20" x="1230" y="260" font-family="Arial" text-anchor="middle">Images</text></g>
+								</g>
+
+
+						/*this is a line (B5)*/ 			
+								<g id="groupId2" >
+									<line id="shapeId2" stroke="purple" stroke-width="2" x1="1220" y1="180" x2="1220" y2="230"></line>
+									
+								</g>
+
+
+
+
+						/*---Queries  Page*/
+						
+								<g id="groupId11" >
+									<rect x="1400" y="230" rx="20" ry="20" height="50" width="150" stroke="purple" fill="none" stroke-width="2" />
+									<text fill="white" font-size="20" x="1480" y="260" font-family="Arial" text-anchor="middle">Queries</text></g>
+								</g>
+
+
+						/*this is a line (B6)*/ 			
+								<g id="groupId2" >
+									<line id="shapeId2" stroke="purple" stroke-width="2" x1="1470" y1="180" x2="1470" y2="230"></line>
+									
+								</g>
+
+
+
+						/*this is a line (B)*/ 
+								<g id="groupId2" >                                       /*length*/
+									<line id="shapeId2" stroke="purple" stroke-width="2" x1="1470" y1="180" x2="90" y2="180"></line>
+
+										
+								</g>
+
+
+
+
+						
+					/*---sitemap  Page */
+								<g id="groupId3" >
+									<rect x="15" y="230"  rx="20" ry="20" height="50" width="150" stroke="purple" fill="none" stroke-width="2" />
+								<text fill="white" font-size="20" x="90" y="260" font-family="Arial" text-anchor="middle">Sitemap</text></g>
+								</g>
+
+					/*this is a line  of (B1) */
+									<g id="groupId2" >
+										<line id="shapeId2" stroke="purple" stroke-width="2" x1="90" y1="180" x2="90" y2="230"></line>
+									
+									</g>
+						</svg>
+					  <!-- end of svg -->
+			<script>
+						document.getElementById("groupId1").
+						addEventListener("click", function() {
+							document.location.href="https://w1810008.users.ecs.westminster.ac.uk/MainPage.html";
+					});
+
+
+
+					document.getElementById("groupId3").
+						addEventListener("click", function() {
+							document.location.href="https://w1810007.users.ecs.westminster.ac.uk/sitemap.html";
+					});
+
+
+					
+					document.getElementById("groupId7").
+						addEventListener("click", function() {
+							document.location.href="https://w1810580.users.ecs.westminster.ac.uk/BuyProducts.html";
+					});
+					
+
+					document.getElementById("groupId8").
+						addEventListener("click", function() {
+							document.location.href="https://w1810213.users.ecs.westminster.ac.uk/AboutUs.html";
+					});
+					
+
+						document.getElementById("groupId9").
+						addEventListener("click", function() {
+							document.location.href="https://w1810213.users.ecs.westminster.ac.uk/Quiz.html";
+					});
+
+
+						document.getElementById("groupId10").
+						addEventListener("click", function() {
+							document.location.href="https://w1810007.users.ecs.westminster.ac.uk/images.html";
+					});
+
+
+						document.getElementById("groupId11").
+						addEventListener("click", function() {
+							document.location.href="https://w1810008.users.ecs.westminster.ac.uk/Query.html";
+					});
+
+					
+					
+			</script>
+			<!-- page footer -->
+				<div class="pagefooter">
+				    <a id="link" href="#top"><img src="pics/arrow.png" width="50" height="50"></a>
+					<a href="editorpage.html"><img src="pics/developer.png" width="50" height="50"></a>
+					<p>Page Developer</p>
+				</div>
+			<!-- end of page footer -->	
+		</body>
+		
+	</html>.

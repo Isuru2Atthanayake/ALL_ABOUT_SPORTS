@@ -1,0 +1,393 @@
+<!Doctype HTML>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			<title>Buy Products Page for Group F-8</title>
+			<link rel="stylesheet" type="text/css" href="CSS/BuyProductsCSS.css">
+			<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+		</head>
+		<body>
+		<!-- Includes the navigation bar with the logo -->
+	<div class="navbar">
+	<!--The logo is placed along with styling  -->
+	<img src="Photos/logo.png" class="logo" alt="logo" width="80" height="80" style="float:right;">
+		<div class="navbar_row">
+			<ul>
+	            <!-- links to other pages  -->
+				<li><a href="MainPage.html"> Home</a></li>
+				<li><a href="Query.html">Queries </a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
+				<li><a href="Quiz.html">Quiz</a></li>
+				<li><a href="BuyProducts.html">Shop</a></li>
+				<li><a href="images.html">Images</a></li>
+				<li><a href="AboutUs.html">About Us</a></li>
+			</ul>
+		</div>
+	</div>
+		<!--Automatic Slide Show to Change pictures in 3 Seconds-->
+			<div class="head">
+			<img class="mySlides" src="Photos/basketball background.jpg" style="width:100%" >
+			<img class="mySlides" src="Photos/Soccer background.jpg" style="width:100%">
+			<img class="mySlides" src="Photos/basketball 2 background.jpg" style="width:100%" >
+			<img class="mySlides" src="Photos/Cricket background.jpg" style="width:100%">
+			<img class="mySlides" src="Photos/soccer.jpg" style="width:100%">
+			<div class="h1"><center>What would you like to purchase?</center></div>
+			</div>
+			<!--JavaScript for Automatic Slide Show to Change pictures in 3 Seconds-->
+			<script>
+			var count = 0;
+			slide();
+			function slide() {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  count++;
+			  if (count > x.length) {count = 1}    
+			  x[count-1].style.display = "block";  
+			  setTimeout(slide, 3000);
+			}
+			</script><br><br><br><br><br><br><br><br><br><br><br><br>
+			<!--BasketBall Items for Sale in Shop-->
+			<h2><center>Basketball Items</center></h2><hr><br><br>
+			<!--BasketBall Ball for Sale in Shop-->
+			<div class="grid-container">
+				<div class="grid-item">
+				<img src="Photos/Basketball ball.jpg" align="left" width="400" height="200"><br><br><br><br><br><br><br>
+				</div>
+			<div class="grid-item">
+				<p><b>Basketball</b></p>
+				<p>Rs.3500 </p>
+				<p>Quantity:</p>
+					<input id="product1" type="number" name="Quantity" min="1" value="1">
+					<br><br>
+					<button type="button" onclick="Product1()"><img src="Photos/AddCart.jpg" width="50" height="50"></button>
+				</div>	
+			</div>
+				
+				
+			<br><br><br><br><br><br><br>
+			<!--BasketBall Ring for Sale in Shop-->
+			<div class="grid-container">
+				<div class="grid-item">				
+				<img src="Photos/Basketball ring.jpg" width="400" height="300"><br><br><br><br><br><br><br>
+				</div>
+				<div class="grid-item">
+				<p><b>Basketball Ring</b></p>
+				<p>Rs.8500 </p>
+				<p>Quantity:</p>
+					<input id="product2" type="number" name="Quantity" min="1" value="1">
+					<br><br>
+					<button type="button" onclick="Product2()"><img src="Photos/AddCart.jpg" width="50" height="50"></button>
+				</div>
+			</div>	
+			<!--BasketBall Shoes for Sale in Shop-->
+			<div class="grid-container">
+				<div class="grid-item">		
+				<img src="Photos/Basketball shoes.jpg" width="400" height="250"><br><br><br><br>
+				</div>
+				<div class="grid-item">
+				<p><b>Basketball Shoes</b></p>
+				<p>Rs.25000 </p>
+				<p>Quantity:</p>
+					<input id="product3" type="number" name="Quantity" min="1" value="1">
+					<br><br>
+					<button type="button" onclick="Product3()"><img src="Photos/AddCart.jpg" width="50" height="50"></button>
+				</div>
+			</div>
+			
+			<br><br><br><br><br><br><br>	
+			<!--Cricket Items for Sale in Shop-->
+			<h2><center>Cricket Items</center></h2><hr><br><br>
+			<!--Cricket Bat for Sale in Shop-->
+			<div class="grid-container">
+				<div class="grid-item">
+				<img src="Photos/Cricketbat.jpg" width="250" height="250"><br><br><br><br><br><br><br><br><br>
+				</div>
+				<div class="grid-item">
+				<p><b>Cricket Bat</b></p>
+				<p>Rs.12000 </p>
+				<p>Quantity:</p>
+					<input id="product4" type="number" name="Quantity" min="1" value="1">
+					<br><br>
+					<button type="button" onclick="Product4()"><img src="Photos/AddCart.jpg" width="50" height="50"></button>
+				</div>
+			</div>
+			<!--Cricket Ball for Sale in Shop-->
+			<div class="grid-container">	
+				<div class="grid-item">
+				<img src="Photos/Cricket leather ball.jpg" width="370" height="200"><br><br><br><br><br><br>
+				</div>
+				<div class="grid-item">
+				<p><b>Leather Cricket Ball</b></p>
+				<p>Rs.2000 </p>
+				<p>Quantity:</p>
+					<input id="product5" type="number" name="Quantity" min="1" value="1">
+					<br><br>
+					<button type="button" onclick="Product5()"><img src="Photos/AddCart.jpg" width="50" height="50"></button>
+				</div>
+			</div>	
+				<br><br><br><br>
+			<!--Cricket Gloves for Sale in Shop-->	
+			<div class="grid-container">	
+				<div class="grid-item">
+				<img src="Photos/Cricket gloves.jpg" width="250" height="250"><br><br><br><br><br><br><br><br>
+				</div>
+				<div class="grid-item">
+				<p><b>Cricket Gloves</b></p>
+				<p>Rs.7500 </p>
+				<p>Quantity:</p>
+					<input id="product6" type="number" name="Quantity" min="1" value="1">
+					<br><br>
+					<button type="button" onclick="Product6()"><img src="Photos/AddCart.jpg" width="50" height="50"></button>
+				</div>
+			</div>	
+			<!--Cricket Helmet for Sale in Shop-->
+			<div class="grid-container">
+				<div class="grid-item">
+				<img src="Photos/Cricket helmet.jpg" width="250" height="200"><br><br><br><br><br><br>
+				</div>
+				<div class="grid-item">
+				<p><b>Cricket Helmet</b></p>
+				<p>Rs.5800 </p>
+				<p>Quantity:</p>
+					<input id="product7" type="number" name="Quantity" min="1" value="1">
+					<br><br>
+					<button type="button" onclick="Product7()"><img src="Photos/AddCart.jpg" width="50" height="50"></button>
+				</div>
+			</div>	
+				<br><br><br><br>
+			<!--Cricket Thigh Pad for Sale in Shop-->	
+			<div class="grid-container">	
+				<div class="grid-item">
+				<img src="Photos/Cricket thigh pad.jpg" width="250" height="350"><br><br><br><br><br><br><br>
+				</div>
+				<div class="grid-item">
+				<p><b>Cricket Thigh Pad</b></p>
+				<p>Rs.2400 </p>
+				<p>Quantity:</p>
+					<input id="product8" type="number" name="Quantity" min="1" value="1">
+					<br><br>
+					<button type="button" onclick="Product8()"><img src="Photos/AddCart.jpg" width="50" height="50"></button>
+				</div>
+			</div>
+			<!--Cricket Batting Pads for Sale in Shop-->
+			<div class="grid-container">
+				<div class="grid-item">
+				<img src="Photos/Cricket pads.jpg" width="350" height="600"><br>
+				</div>
+				<div class="grid-item">
+				<p><b>Cricket Batting Pads</b></p>
+				<p>Rs.7800 </p>
+				<p>Quantity:</p>
+					<input id="product9" type="number" name="Quantity" min="1" value="1">
+					<br><br>
+					<button type="button" onclick="Product9()"><img src="Photos/AddCart.jpg" width="50" height="50"></button>
+				</div>
+			</div>	
+			<br><br><br><br><br><br><br>	
+			<!--Soccer Items for Sale in Shop-->
+			<h2><center>Soccer Items</center></h2><hr>
+			<br><br><br>
+			<!--Soccer Ball for Sale in Shop-->
+			<div class="grid-container">
+				<div class="grid-item">
+				<img src="Photos/Soccer ball.jpg" width="550" height="300"><br><br><br><br><br><br><br>
+				</div>
+				<div class="grid-item">
+				<p><b>Soccer Ball</b></p>
+				<p>Rs.3800 </p>
+				<p>Quantity:</p>
+					<input id="product10" type="number" name="Quantity" min="1" value="1">
+					<br><br>
+					<button type="button" onclick="Product10()"><img src="Photos/AddCart.jpg" width="50" height="50"></button>
+				</div>
+			</div>
+			<!--Soccer Cleats for Sale in Shop-->
+			<div class="grid-container">
+				<div class="grid-item">
+				<img src="Photos/Soccer cleats.jpg" width="350" height="350"><br><br><br><br><br>
+				</div>
+				<div class="grid-item">
+				<p><b>Soccer Cleats</b></p>
+				<p>Rs.14000 </p>
+				<p>Quantity:</p>
+					<input id="product11" type="number" name="Quantity" min="1" value="1">
+					<br><br>
+					<button type="button" onclick="Product11()"><img src="Photos/AddCart.jpg" width="50" height="50"></button>
+				</div>
+			</div>
+			<!--Soccer Shin Guards for Sale in Shop-->
+			<div class="grid-container">
+				<div class="grid-item">
+				<img src="Photos/Soccer shin guards.jpg" width="400" height="400">
+				</div>
+				<div class="grid-item">
+				<p><b>Soccer Shin Guards</b></p>
+				<p>Rs.4600 </p>
+				<p>Quantity:</p>
+					<input id="product12" type="number" name="Quantity" min="1" value="1">
+					<br><br>
+					<button type="button" onclick="Product12()"><img src="Photos/AddCart.jpg" width="50" height="50"></button>
+				</div>
+			</div>
+			<br><br><br><br>
+			<hr>
+				<h5 class="check">CheckOut</h5><br>
+				<div class="ship"><b><center>All products have free shipping</center></b></p></div>
+			<!--Details to be entered to get Personal Information of Customer-->	
+			<form name="Form" class="form" onsubmit="return FormAdd()" autocomplete="off">
+				<table>
+					<tr>
+						<td><label for="name"> <b>Full Name:</b> </label><br><br></td>
+						<td><input type="text" id="name" name="fullname"><br><br></td>
+					</tr>
+					<tr>
+						<td><label for="email"><b> E-mail:</b></label><br><br></td>
+						<td><input type="email" id="email" name="Email"><br><br></td>
+					</tr>
+					<tr>
+						<td><label for="Address"> <b>Address:</b> </label><br><br></td>
+						<td><input type="text" id="address" name="Address"><br><br></td>
+					</tr>
+					<tr>					
+						<td><label for="mobilenumber"><b> Mobile Number:</b> </label><br><br></td>
+						<td><input type="text" maxlength="10" pattern="\d{10}" id="number" name="mobilenumber"><br><br></td>
+					</tr>
+				</table>
+				<br><br><br><br><br>
+				<div class="checkButton">
+					<input type="submit" value="Place Your Order" class="order">
+					<input type="reset" value="Reset" class="reset" >
+				</div>	
+			</form>
+			<!-- JavaScript for Adding Products to Cart and Dsiplaying amount,total Price and Customer Details-->
+			<script>
+				var quantityArray =[];
+				var productArray =[];
+				var priceArray =[];
+				var alertMessage =[];
+				<!--BasketBall ball JavaScript-->
+				function Product1(){
+					var price1=document.getElementById('product1').value*3500;	
+					window.alert(document.getElementById('product1').value+" Basketball Ball has been added to your cart. Rs "+price1);
+					quantityArray.push(document.getElementById('product1').value);
+					productArray.push("Basketball");
+					priceArray.push(price1);}
+				<!--BasketBall Ring JavaScript-->
+				function Product2(){
+					var price2=document.getElementById('product2').value*8500;	
+					window.alert(document.getElementById('product2').value+" Basketball Ring has been added to your cart. Rs "+price2);
+					quantityArray.push(document.getElementById('product2').value);
+					productArray.push("Basketball Ring");
+					priceArray.push(price2);}
+				<!--BasketBall Shoes JavaScript-->	
+				function Product3(){
+					var price3=document.getElementById('product3').value*25000;	
+					window.alert(document.getElementById('product3').value+" pair of Basketball Shoes has been added to your cart. Rs "+price3);
+					quantityArray.push(document.getElementById('product3').value);
+					productArray.push("Basketball Shoes");
+					priceArray.push(price3);}
+				<!--Cricket Bat JavaScript-->
+				function Product4(){
+					var price4=document.getElementById('product4').value*12000;	
+					window.alert(document.getElementById('product4').value+" Cricket Bat has been added to your cart. Rs "+price4);
+					quantityArray.push(document.getElementById('product4').value);
+					productArray.push("Cricket Bat");
+					priceArray.push(price4);}
+				<!--Cricket Ball JavaScript-->	
+				function Product5(){
+					var price5=document.getElementById('product5').value*2000;	
+					window.alert(document.getElementById('product5').value+" Leather Cricket Ball has been added to your cart. Rs "+price5);
+					quantityArray.push(document.getElementById('product5').value);
+					productArray.push("Cricket Ball");
+					priceArray.push(price5);}
+				<!--Cricket Gloves JavaScript-->
+				function Product6(){
+					var price6=document.getElementById('product6').value*7500;	
+					window.alert(document.getElementById('product6').value+" pair of Cricket Gloves has been added to your cart. Rs "+price6);
+					quantityArray.push(document.getElementById('product6').value);
+					productArray.push("Cricket Gloves");
+					priceArray.push(price6);}
+				<!--Cricket Helmet JavaScript-->	
+				function Product7(){
+					var price7=document.getElementById('product7').value*5800;	
+					window.alert(document.getElementById('product7').value+" Cricket Helmet has been added to your cart. Rs "+price7);
+					quantityArray.push(document.getElementById('product7').value);
+					productArray.push("Cricket Helmet");
+					priceArray.push(price7);}
+				<!--Cricket Thigh Pad JavaScript-->
+				function Product8(){
+					var price8=document.getElementById('product8').value*2400;	
+					window.alert(document.getElementById('product8').value+" Cricket Thigh Pad has been added to your cart. Rs "+price8);
+					quantityArray.push(document.getElementById('product8').value);
+					productArray.push("Cricket Thigh Pad");
+					priceArray.push(price8);}
+				<!--Cricket Batting Pads JavaScript-->
+				function Product9(){
+					var price9=document.getElementById('product9').value*7800;	
+					window.alert(document.getElementById('product9').value+" pair of Cricket Batting Pads has been added to your cart. Rs "+price9);
+					quantityArray.push(document.getElementById('product9').value);
+					productArray.push("Cricket Batting Pads");
+					priceArray.push(price9);}
+				<!--Soccer Ball JavaScript-->	
+				function Product10(){
+					var price10=document.getElementById('product10').value*3800;	
+					window.alert(document.getElementById('product10').value+" Soccer Ball has been added to your cart. Rs "+price10);
+					quantityArray.push(document.getElementById('product10').value);
+					productArray.push("Soccer Ball");
+					priceArray.push(price10);}
+				<!--Soccer Cleats JavaScript-->
+				function Product11(){
+					var price11=document.getElementById('product11').value*14000;	
+					window.alert(document.getElementById('product11').value+" pair of Soccer Cleats has been added to your cart. Rs "+price11);
+					quantityArray.push(document.getElementById('product11').value);
+					productArray.push("Soccer Cleats");
+					priceArray.push(price11);}
+				<!--Soccer Shin Guards JavaScript-->	
+				function Product12(){
+					var price12=document.getElementById('product12').value*4600;	
+					window.alert(document.getElementById('product12').value+" pair of Soccer Shin Guards has been added to your cart. Rs "+price12);
+					quantityArray.push(document.getElementById('product12').value);
+					productArray.push("Soccer Shin Guards");
+					priceArray.push(price12);}	
+				<!--Form Information JavaScript-->	
+				function FormAdd(){
+					var Fname = document.forms["Form"]["fullname"].value;
+					var Femail = document.forms["Form"]["Email"].value;
+					var Faddress = document.forms["Form"]["Address"].value;
+					var Fmobile = document.forms["Form"]["mobilenumber"].value;
+					if(Fname ==""){
+						alert("Please fill out your Name");
+						return false;
+					}	
+					if(Femail ==""){
+						alert("Please fill out your Email");
+						return false;
+					}
+					if(Faddress ==""){
+						alert("Please fill out your Address");
+						return false;
+					}
+					if(Fmobile ==""){
+						alert("Please fill out your Mobile Number");
+						return false;
+					}
+					var totalPrice=0;
+					for(var i = 0; i < productArray.length; i++){
+						var tempString = quantityArray[i] + " x " + productArray[i] + " - Rs. " + priceArray[i];
+						alertMessage.push(tempString);
+						totalPrice += priceArray[i];
+					}
+					<!--Total Bill and Personal Details Alert-->
+					window.alert("Customer name : "+document.getElementById('name').value +"\nAddress : "+document.getElementById('address').value+"\nPhone Number : "+document.getElementById('number').value+"\n\n Your order summary : \n" + alertMessage.join("\n") +"\n_____________________________________________\n"+"\nYour total is Rs. " + totalPrice.toString() +"\n_____________________________________________"+"\n\nThank you for shopping with us.")
+				}
+			</script>
+			<br><br><br><br><br><br><hr>	
+			<!--Footer Containing Page Developer Page and Back To Top Icon-->
+			<a id="link" href="#top"><img src="Photos/arrow.png" width="100" height="100"></a>
+			<a href="PageDeveloper-Viran.html"><img src="Photos/developer.png" width="75" height="75"></a>
+			<div class="shop_developer">Page Developer</div>
+		</body>
+	</html>		

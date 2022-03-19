@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Images</title>
+		<link rel="stylesheet" type="text/css" href="css/images.css" />
+		<script type="text/javascript" src="js/images.js"></script>
+	    
+	</head>
+	<body>
+			<div class="mainpage_header">
+				<div class="navbar"><!-- Navigation bar -->
+					<img src="pics/logo.png" class="logo"; width="80" height="80" style="float:right;">
+					<div class="navbar_row">
+						<ul>
+							<li><a href="https://w1810008.users.ecs.westminster.ac.uk/MainPage.html"> Home</a></li>
+							<li><a href="https://w1810008.users.ecs.westminster.ac.uk/Query.html">Queries </a></li>
+							<li><a href="https://w1810007.users.ecs.westminster.ac.uk/sitemap.html">Sitemap</a></li>
+							<li><a href="https://w1810213.users.ecs.westminster.ac.uk/Quiz.html">Quiz</a></li>
+							<li><a href="https://w1810580.users.ecs.westminster.ac.uk/BuyProducts.html">Shop</a></li>
+							<li><a href="https://w1810007.users.ecs.westminster.ac.uk/images.html">Images</a></li>
+							<li><a href="https://w1810213.users.ecs.westminster.ac.uk/AboutUs.html">About Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="transparentbar"></div>	
+			<div class="container1"><!--images and the 2 forms are displayed in this container-->
+					<h1 class="heading" >Images</h1>
+							<div class="product" id="product1">
+				     			<div class="hover01">
+							     	<figure><img src="pics/1.jpg"  id="im" alt="badminton" onmouseover="myFunction(1);" width="220" height="200"></figure>
+
+								       	<div class="description">    
+									          <h3> Badminton</h3><br/>
+									    </div>
+							    </div>
+						    </div>
+							<div class="product" id="product2">
+										<div class="hover01">
+								     		<figure><img src="pics/2.jpg" alt="football" onmouseover="myFunction(2);" width="220" height="200"></figure>
+										       	<div class="description">    
+											          <h3> Football</h3><br/>
+												</div>
+							    		</div>
+							    </div>
+							<div class="product" id="product3">
+										<div class="hover01">
+							     			<figure><img src="pics/3.jpg" alt="Hockey" onmouseover="myFunction(3);" width="220" height="200"></figure>
+									       	<div class="description">    
+										          <h3> Hockey</h3><br/>
+										    </div>
+										</div>
+							</div>
+							<div class="product" id="product4">
+										<div class="hover01">
+								     			<figure><img src="pics/4.jpg"  alt="" onmouseover="myFunction(4);" width="220" height="200"></figure>
+
+										       	<div class="description">    
+											          <h3> Cricket</h3><br/>
+											    </div>
+										</div>
+							</div>
+							<div class="product" id="product5">
+										<div class="hover01">
+								     			<figure><img src="pics/5.jpg" alt="" onmouseover="myFunction(5);" width="220" height="200"></figure>
+										       	<div class="description">    
+											          <h3> Basket ball</h3><br/>
+											    </div>
+										</div>
+							</div>
+						 		 <div class="dropdown"><!-- this is a div of dropdown to change the colour of the background and the text using a 2forms-->
+							          <form>
+								               change background colour
+								                <select  id="a1" onchange="colourchange(this.value);">
+									                	  <option value="pleaseSelect" disabled selected hidden>Background Colour</option>
+										                  <option id="a2" onmouseover="cha(this.id,this.value);" value="red">Red</option>
+										                  <option id="a3" onmouseover="cha(this.id,this.value);" value="green">Green</option>
+										                  <option id="a4" onmouseover="cha(this.id,this.value);" value="white">White </option>
+										                  <option id="a5" onmouseover="cha(this.id,this.value);" value="black">Black</option>
+								                </select>
+										        <input type="reset" value="Reset" onclick="resetall()" role="button" /><!-- reset button-->
+							          </form> 
+									  <form>
+								            	change font colour
+									           <select class="align" id="fontColor" onchange="fontcolor(this.form)" 
+										            aria-label="dropdown menu to select font colour">
+										            <option value="pleaseSelect" disabled selected hidden>Font Colour</option>
+										            <option value="color1">Brown</option>
+										            <option value="color2">Blue</option>
+										            <option value="color3">violet</option>
+										            <option value="color4">White</option>
+										            <option value="color5">Red</option>
+									          </select>
+									 </form> 
+				           	</div><!-- dropdown ends here -->
+									<div id="sport-image-description" ><!-- display area of the larger image-->
+									        <img id="largeimg" src="" alt="large-image"  width="100%" >
+									        <p id="displaytext"></p>
+				           			</div>
+			</div><!-- Container ends here -->
+			<!-- page footer -->
+				<div class="pagefooter">
+					    <a id="link" href="#top">Top<img src="pics/arrow.png" width="50" height="50"></a>
+						<a href="editorpage.html"><img src="pics/developer.png" width="50" height="50"></a>
+						<p class="developer">Page Developer</p>
+				</div>
+			<!-- page footer ends here -->
+	</body>
+</html>

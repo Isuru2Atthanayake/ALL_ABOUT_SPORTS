@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+		<title>Query Form</title>
+		<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+	</head>
+	<body>
+				<!-- Includes the navigation bar with the logo -->    
+		<div class="navbar">
+		<!--The logo is placed along with styling  -->
+			<img src="Photos/logo.png" alt="logo" class="logo" width="75" height="75" style="float:right;">
+			<div class="navbar_row">
+				<ul>
+					<!-- links to other pages  -->
+					<li><a href="MainPage.html">Home</a></li>
+					<li><a href="Query.html">Queries </a></li>
+					<li><a href="sitemap.html">Sitemap</a></li>
+					<li><a href="Quiz.html">Quiz</a></li>
+					<li><a href="BuyProducts.html">Shop</a></li>
+					<li><a href="images.html">Images</a></li>
+					<li><a href="AboutUs.html">About Us</a></li>
+				</ul>
+			</div>
+		</div>
+				<!--includes the opening image and text message  -->
+		<div class="query_panel1">
+			<!-- Header message -->
+			<div class="query_header_message">
+				<h1>Help Us Help You!</h1>
+				<p><b>At Next Gen Sports we believe that providing your sporting needs and enchancing your sports knowledge is our first priority! </b></p>
+				<p><b>Our customer service  team is standing by to address your questions,ideas and feedback!</b></p>
+				<!-- anchor to query form -->
+				<a href="#qf">Take me to Query Form</a>
+			</div>	
+		</div>
+		<!-- includes form  -->	  
+		<div class="query_container">  
+			<div class="query_formsection">  
+				<div id="mainform" class="query_mainformelements">
+					<form id="form" action="mailto:chamodh.20200267@iit.ac.lk" method="post" enctype="text/plain" name="Queryform">
+						<!-- section where user has to submit input -->
+						<div id ="query_formelements" class="query_formelements">
+						    <!-- Anchor -->
+							<a id="form_anchor" name="qf"></a>
+							<h1>Have Questions? Pass the ball to us!</h1>
+								<table>
+									<tr>
+										<td><label for="Uname">Name :</label> </td>
+										<td><input type="text" id="Uname" name="Uname" placeholder="Enter Your Name"></td>
+									</tr>	
+									<tr>
+										<td><label for="Uemail">E-mail :</label> </td>
+										<td><input type="email" id="Uemail" name="Uemail" placeholder="Enter your E-mail here"><br></td>
+									</tr>	
+									<tr>
+										<td><label><u>Catagory of Inquiry</u></label></td>
+									</tr>
+									<tr>
+										<td><label for="Catagory1">Trivia Related :</label> <input type="radio" class="query_radio1" id="Catagory1" name="Subject" value="Trivia"><br>
+											<label for="Catagory2">Shipping Based :</label> <input type="radio" class="query_radio2" id="Catagory2" name="Subject" value="Store"><br>
+											<label for="Catagory3">Ideas/Feedback :</label> <input type="radio" class="query_radio3" id="Catagory3" name="Subject" value="Feedback"><br>
+										</td>
+									</tr>
+									<tr>
+										<td><label for="Ufield">Query Details:</label> </td>
+										<td><textarea id="Ufield" name="Ufield" rows="10" cols="50"></textarea> <br>
+									</tr>
+										<!--validate and reset buttons  -->
+									<tr>	
+										<td><br><input type="button" value="View Query" onclick="validateForm()"><input type="reset" value="Reset"></td>				
+									</tr>
+								</table>
+						</div>
+							<!-- Preview of the form is displayed in the section below -->
+						<div id="query_EndResult" class="query_EndResultDisplay">
+							<p id="Unameprint"></p>
+							<p id="Uemailprint"></p>
+							<p id="Udetailscatprint"></p>
+							<p id="Udetailsprint"></p>
+							<div id="query_ERbtns" style="display:none;">
+								<!-- Edit and Submit buttons -->
+								<br><br><br><input type="button" value="Edit" onclick="backtoform()"> <input id="sendemail" type="submit" value="Submit" onclick="disappearmail()">
+							</div>
+						</div>
+					</form>
+				</div>
+					<!-- appears after form is submitted -->
+				<div  class="query_confirmation_message">
+					<p id="query_confirmationmessage"></p>
+					<div id="backtoqf" class="backtoqf" style="display:none;">
+						<a href="Query.html">Submit Another</a>
+					</div>
+				</div>
+			</div> 
+				<!-- image next to the form -->
+			<div class="query_followupimage">		
+			</div>
+		</div>
+		<!-- page footer -->
+		<div class="pagefooter">
+			<!-- anchor to the top -->
+			<a id="link"  href="#top"><img src="Photos/arrow.png" alt="arrow" width="50" height="50"></a>
+     
+			<a href="infochamodh.html"><img src="Photos/developer.png" alt="dev" width="50" height="50"></a>
+			<p>Page Developer</p>
+		</div> 
+		<script src="JS/filescript.js"> </script>
+	</body>
+</html>
